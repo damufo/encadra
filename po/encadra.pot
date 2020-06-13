@@ -1,0 +1,347 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-13 08:28+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:23
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:131
+msgid "Preferences"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:32
+msgid "JPG options:"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:36
+msgid "Quality:"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:39
+msgid "Quality when save"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:44
+msgid ""
+"The image quality, on a scale from 1 (worst) to 95 (best). The default is "
+"75. Values above 95 should be avoided; 100 disables portions of the JPEG "
+"compression algorithm, and results in large files with hardly any gain in "
+"image quality."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:53
+msgid "Optimize:"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:60
+msgid ""
+"If true, indicates that the encoder should make an extra pass over the image "
+"in order to select optimal encoder settings."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:69
+msgid "Progressive:"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:76
+msgid ""
+"If true, indicates that this image should be stored as a progressive JPEG "
+"file."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:86
+msgid "Auto-resize (px):"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:90
+#: /home/damufo/dev/encadra/src/modules/resize/w_resize.py:34
+msgid "Width:"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:96
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:111
+msgid "When 0 is not set."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:105
+#: /home/damufo/dev/encadra/src/modules/resize/w_resize.py:53
+msgid "Height:"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:120
+#: /home/damufo/dev/encadra/src/modules/resize/w_resize.py:87
+msgid "Preserve aspect ratio:"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:134
+msgid "Save when auto-resize:"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:153
+#: /home/damufo/dev/encadra/src/modules/resize/w_resize.py:101
+msgid "&Cancel"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/prefs/w_prefs.py:159
+#: /home/damufo/dev/encadra/src/modules/resize/w_resize.py:107
+msgid "&Acept"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:23
+msgid "Encadra"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:80
+msgid "Open"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:83
+msgid "Save"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:86
+#: /home/damufo/dev/encadra/src/classes/wxp/messages.py:102
+msgid "Save as..."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:91
+msgid "Rename"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:94
+msgid "Delete"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:99
+msgid "Quit"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:102
+msgid "&File"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:105
+#: /home/damufo/dev/encadra/src/modules/resize/w_resize.py:23
+msgid "Resize"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:108
+msgid "Auto-resize"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:111
+msgid "Crop"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:114
+msgid "Rotate right"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:117
+msgid "Rotate left"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:120
+msgid "Rotate custom"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:123
+msgid "Flip horizontally"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:126
+msgid "Flip vertically"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:134
+msgid "&Edit"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:137
+msgid "Fullscreen"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:142
+msgid "Go next"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:145
+msgid "Go previous"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:148
+msgid "Go first"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:151
+msgid "Go last"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:156
+msgid "Zoom in"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:159
+msgid "Zoom out"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:162
+msgid "Zoom 100%"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:165
+msgid "Zoom fit"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:168
+msgid "&View"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:171
+msgid "Homepage"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:174
+msgid "Report a bug"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:177
+msgid "Source"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:182
+msgid "About"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/w_main.py:185
+msgid "&Help"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/v_main.py:41
+msgid "[{} of {}] {}{}  {}  {}  {}%"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/v_main.py:81
+msgid "{} website"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/i_main.py:189
+msgid "The file has not been saved... continue closing?"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/p_main.py:46
+msgid ""
+"Is not possible rename modified pictures.\n"
+"Please, save the image first."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/p_main.py:73
+msgid "Are you sure you want to delete the image?"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/p_main.py:132
+msgid "Insert an angle:"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/p_main.py:133
+msgid "Angle"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/p_main.py:140
+msgid ""
+"The value is no valid. Please insert\n"
+"a number (integer or float)."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/main/p_main.py:168
+msgid "Do you want to save the changes?"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/resize/w_resize.py:72
+msgid "Units:"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/resize/w_resize.py:77
+msgid "pixels"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/resize/w_resize.py:77
+msgid "percentages"
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/resize/p_resize.py:29
+msgid "Error in values, set more than 0."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/modules/resize/p_resize.py:31
+msgid "Same values as the current ones."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/specific_classes/config.py:17
+msgid "A simple image viewer."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/specific_classes/config.py:22
+msgid ""
+"Copyright (C) 2020  Daniel Muñiz Fontoira\n"
+"\n"
+"This program is free software: you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/specific_classes/picture.py:45
+msgid "Please, set a file name."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/specific_classes/picture.py:51
+msgid ""
+"Please, set a valid file name.\n"
+"Example: picture.jpg."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/specific_classes/picture.py:55
+msgid ""
+"The {} suffix is not supported.\n"
+"Valid suffixes are: {}."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/specific_classes/picture.py:61
+msgid "The new filename is same."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/specific_classes/picture.py:64
+msgid ""
+"Already exists a file with this name.\n"
+"Please, set another file name."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/specific_classes/picture.py:233
+msgid "Saved from Encadra Image Viewer."
+msgstr ""
+
+#: /home/damufo/dev/encadra/src/classes/wxp/messages.py:90
+msgid "Browse..."
+msgstr ""
