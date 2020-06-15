@@ -25,7 +25,8 @@ class Interactor(object):
         view.sbx_picture.Bind(wx.EVT_LEFT_DOWN, self.mouse_down)
         view.sbx_picture.Bind(wx.EVT_LEFT_UP, self.mouse_up)
         view.sbx_picture.Bind(wx.EVT_MOTION, self.mouse_motion)
-        # view.sbx_picture.Bind(wx.EVT_PAINT, self.on_paint)
+        if presenter.model.pictures.config.platform == 'lin':
+            view.sbx_picture.Bind(wx.EVT_PAINT, self.on_paint)
         view.Bind(wx.EVT_SHOW, self.on_activate_app)
 
         view.Bind(wx.EVT_MENU, self.on_open, id=view.mnu_open.Id)
@@ -90,7 +91,7 @@ class Interactor(object):
             (wx.ACCEL_NORMAL,  wx.WXK_HOME, view.mnu_go_first.Id),
             (wx.ACCEL_NORMAL,  wx.WXK_END, view.mnu_go_last.Id),
             (wx.ACCEL_NORMAL,  ord('+'), view.mnu_zoom_in.Id),
-            (wx.ACCEL_NORMAL,  ord('='), view.mnu_zoom_in.Id),
+            # (wx.ACCEL_NORMAL,  ord('='), view.mnu_zoom_in.Id),
             (wx.ACCEL_NORMAL,  ord('-'), view.mnu_zoom_out.Id),
             (wx.ACCEL_NORMAL,  ord('1'), view.mnu_zoom_1.Id),
             (wx.ACCEL_NORMAL,  ord('0'), view.mnu_zoom_fit.Id),

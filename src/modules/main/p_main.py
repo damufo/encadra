@@ -26,7 +26,7 @@ class Presenter(object):
             suffixes=pictures.suffixes,
             )
         if file_path and file_path.parent != pictures.work_folder:
-            pictures.work_folder(file_path.parent)
+            pictures.work_folder = file_path.parent
             if file_path.suffix.lower() in pictures.suffixes:
                 pictures.path_picture_ini = file_path
             else:
@@ -203,17 +203,29 @@ class Presenter(object):
         self.view.load_picture()
 
     def show_fullscreen(self):
-        self.view.SetTransparent(0)
-        new_value = not self.view.IsFullScreen()
-        if new_value:
-            self.model.pictures.fit_limit = False
-            self.view.lbl_properties.Hide()
+        if self.model.pictures.config.platform == 'lin':
+            self.view.SetTransparent(0)
+            new_value = not self.view.IsFullScreen()
+            if new_value:
+                self.model.pictures.fit_limit = False
+                self.view.lbl_properties.Hide()
+            else:
+                self.model.pictures.fit_limit = True
+                self.view.lbl_properties.Show()
+            self.view.ShowFullScreen(new_value)
+            self.view.force_fit = True
+            self.view.on_size_enabled = False
         else:
-            self.model.pictures.fit_limit = True
-            self.view.lbl_properties.Show()
-        self.view.ShowFullScreen(new_value)
-        self.view.force_fit = True
-        self.view.on_size_enabled = False
+            new_value = not self.view.IsFullScreen()
+            if new_value:
+                self.model.pictures.fit_limit = False
+                self.view.lbl_properties.Hide()
+            else:
+                self.model.pictures.fit_limit = True
+                self.view.lbl_properties.Show()
+            self.view.ShowFullScreen(new_value)
+            self.set_factor_to_fit()
+            self.view.load_picture()
 
     def about(self):
         self.view.about(self.model.pictures.config)

@@ -40,6 +40,11 @@ class Encadra(wx.App):
             arg1 = sys.argv[1]
         config = Config(app_path_folder=app_path_folder, arg1=arg1)
         
+        if sys.platform.lower()[:3] == 'lin':
+            config.platform = 'lin'
+        elif sys.platform.lower()[:3] == 'win':
+            config.platform = 'win'
+
         ViewPlus.prefs = config.prefs
         ViewPlus.app_icon = encadra.GetIcon()
 
