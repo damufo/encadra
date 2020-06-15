@@ -25,7 +25,7 @@ class Interactor(object):
         view.sbx_picture.Bind(wx.EVT_LEFT_DOWN, self.mouse_down)
         view.sbx_picture.Bind(wx.EVT_LEFT_UP, self.mouse_up)
         view.sbx_picture.Bind(wx.EVT_MOTION, self.mouse_motion)
-        view.sbx_picture.Bind(wx.EVT_PAINT, self.on_paint)
+        # view.sbx_picture.Bind(wx.EVT_PAINT, self.on_paint)
         view.Bind(wx.EVT_SHOW, self.on_activate_app)
 
         view.Bind(wx.EVT_MENU, self.on_open, id=view.mnu_open.Id)
@@ -184,7 +184,7 @@ class Interactor(object):
         self.presenter.delete()
         
     def on_quit(self, event):
-        if self.view.picture.modified:
+        if self.view.picture and self.view.picture.modified:
             result = self.view.msg.question(
                 message=_("The file has not been saved... continue closing?"))
             if not result:
