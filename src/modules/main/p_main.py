@@ -49,7 +49,7 @@ class Presenter(object):
         else:
             self.save_as(remove_source=True)
 
-    def save_as(self, remove_source=True):
+    def save_as(self, remove_source=False):
         current_picture = self.model.pictures.current_picture
         new_file_path = self.view.msg.save_file(
             default_file=str(current_picture.file_name),
