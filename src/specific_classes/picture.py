@@ -107,7 +107,7 @@ class Picture(object):
             else:
                 width = int(((height)/self.image_pil.size[1])*self.image_pil.size[0])
         size = (width, height)
-        img = self.image_pil.resize(size, Image.ANTIALIAS)
+        img = self.image_pil.resize(size, Image.LANCZOS)
         bitmap = wx.Bitmap.FromBuffer(width, height, img.tobytes())
         return bitmap
 
