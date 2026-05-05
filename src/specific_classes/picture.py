@@ -124,7 +124,11 @@ class Picture(object):
         self.modified = True
 
     def rotate(self, angle=90):
-        self.image_pil = self.image_pil.rotate(-angle, expand=1)
+        self.image_pil = self.image_pil.rotate(
+            -angle,
+            expand=1,
+            resample=Image.BICUBIC
+            )
         self.modified = True
 
     def flip(self, method):
@@ -195,7 +199,8 @@ class Picture(object):
         if pr_ratio:
             new_height = 0
             new_width = 0
-            if max_width and (max_width < self.width):
+            # if max_width and (max_width < self.width):
+            if max_width and (max_width != self.width):
                 width = max_width
                 factor = max_width / self.width
                 new_height = int(self.height * factor)
