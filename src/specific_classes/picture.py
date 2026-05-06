@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 from PIL import Image
 from PIL import JpegImagePlugin as JIP
+import pillow_heif
 import wx
 from specific_functions import utils
 
@@ -36,7 +37,7 @@ class Picture(object):
 
     @property
     def file_suffix(self):
-        return self.file_path.suffix
+        return self.file_path.suffix.lower()
 
     def check_new_file_path(self, new_file_path):
         message_error = ''
@@ -84,6 +85,8 @@ class Picture(object):
 
     def load_from_file(self):
         try:
+            if self.file_suffix == '.heic':
+                pillow_heif.register_heif_opener()
             self._image_pil = Image.open(self.file_path).convert("RGB")
             self.size_bytes = os.stat(self.file_path).st_size
         except:
@@ -224,7 +227,7 @@ class Picture(object):
             self.modified = True
 
     def save(self):
-        if self.file_suffix.lower() in ('.jpg', '.jpeg'):
+        if self.file_suffix in ('.jpg', '.jpeg'):
             prefs = self.config.prefs
             quality = prefs.get_value('prefs.jpg.quality')
             optimize = prefs.get_value('prefs.jpg.optimize')

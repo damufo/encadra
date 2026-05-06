@@ -12,7 +12,7 @@ class Pictures(list):
         self.current_picture = None
         self.path_picture_ini = None
         self.work_folder = None
-        self.suffixes = ('.jpg', '.jpeg', '.png', '.bmp')
+        self.suffixes = ('.jpg', '.jpeg', '.png', '.bmp', '.heic', '.webp')
         self.fit_limit = True  # Limit fit to 100%
 
     def set_paths(self, arg1):
